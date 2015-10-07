@@ -1,0 +1,24 @@
+info:
+  version: 0.0.1-SNAPSHOT
+  stage: test
+
+logging:
+  file: target/boot-admin-sample.log
+
+spring:
+  application:
+    name: demo
+  boot:
+    admin:
+      url: http://localhost:8080
+  cloud:
+    config:
+      enabled: true
+endpoints:
+  health:
+    sensitive: true
+  restart:
+    enabled: true
+  refresh:
+    enabled: true
+    
